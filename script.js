@@ -80,8 +80,8 @@ function totalPrice () {
     })
 
     total.value = tableOfPrices.reduce(reducer)
-
 }
+totalPrice()
 
 
 
@@ -90,5 +90,6 @@ const closes = document.querySelectorAll(`.close`)
 closes.forEach(close => {
     close.addEventListener(`click`, () => {
         close.parentElement.remove()
+        totalPrice()
     })
 })
