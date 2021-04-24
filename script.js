@@ -79,7 +79,7 @@ function totalPrice () {
         tableOfPrices.push(price.value)
     })
 
-    total.value = tableOfPrices.reduce(reducer)
+    total.value = tableOfPrices.reduce(reducer, 0)
 }
 totalPrice()
 
